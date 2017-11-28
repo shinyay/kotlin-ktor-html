@@ -53,7 +53,8 @@ dependencies {
 }
 
 jar {
-    baseName 'demo.jar'
+    //baseName 'demo'
+    archiveName 'demo.jar'
     manifest {
         attributes 'Main-Class': 'io.ktor.server.netty.DevelopmentEngine'
     }
