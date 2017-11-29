@@ -63,7 +63,7 @@ jar {
 }
 
 task createZip(dependsOn: 'jar', type: Zip) {
-    from 'src/metadata'
-    from 'build/libs/demo.jar'
+    from ('src/metadata'){include 'manifest.json'}
+    from ('build/libs'){include 'demo.jar'}
     archiveName 'demo.zip'
 }
