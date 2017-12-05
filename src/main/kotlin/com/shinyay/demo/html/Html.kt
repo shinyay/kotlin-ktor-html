@@ -10,7 +10,7 @@ fun Application.main() {
     install(DefaultHeaders)
     install(CallLogging)
     install(Routing) {
-        get("/") {
+        get("/demo") {
             //call.respondText("My Example Blog2", ContentType.Text.Html)
             call.respondHtml {
                 head {
